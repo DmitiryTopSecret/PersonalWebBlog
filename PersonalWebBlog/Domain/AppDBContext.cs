@@ -54,6 +54,13 @@ namespace PersonalWebBlog.Domain
 
             modelBuilder.Entity<TextField>().HasData(new TextField
             {
+                Id = new Guid("70bf165a-700a-4156-91c0-e83fce0a277f"),
+                CodeWord = "PageServices",
+                Title = "Мои услуги"
+            });
+
+            modelBuilder.Entity<TextField>().HasData(new TextField
+            {
                 Id = new Guid("4aa76a4c-c59d-409a-84c1-06e6487a137a"),
                 CodeWord = "PageContacts",
                 Title = "Контакты"

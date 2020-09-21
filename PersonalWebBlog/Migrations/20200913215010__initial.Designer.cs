@@ -10,7 +10,7 @@ using PersonalWebBlog.Domain;
 namespace PersonalWebBlog.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20200901203014__initial")]
+    [Migration("20200913215010__initial")]
     partial class _initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -51,7 +51,7 @@ namespace PersonalWebBlog.Migrations
                         new
                         {
                             Id = "8af10569-b018-4fe7-a380-7d6a14c70b74",
-                            ConcurrencyStamp = "16b483f1-65fb-49d6-8878-42991ea8aeb5",
+                            ConcurrencyStamp = "f1b987fe-9fb5-4877-9cec-1b40d20e2e55",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         });
@@ -150,13 +150,13 @@ namespace PersonalWebBlog.Migrations
                         {
                             Id = "3b62472e-4f66-49fa-a20f-e7685b9565d8",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "355c7877-f72c-49bd-8e8c-59794f8fff65",
+                            ConcurrencyStamp = "bcd3588f-7ea1-4575-982f-417bfe35868f",
                             Email = "my@email.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "MY@EMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAELaVB6PYcAvrbjL/DyCNPwqE4p1jQBoqYllFDP83JQPRHYTBC/iZ5eOIn9nDlMuJQw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEIiIltY3sh7tDln51GdV4rrPJ+U1c+AHppbLkr16nDXNvbsl62BYboTNI2wQ2IDTrA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -330,15 +330,23 @@ namespace PersonalWebBlog.Migrations
                         {
                             Id = new Guid("63dc8fa6-07ae-4391-8916-e057f71239ce"),
                             CodeWord = "PageIndex",
-                            DateAdded = new DateTime(2020, 9, 1, 20, 30, 14, 670, DateTimeKind.Utc).AddTicks(9783),
+                            DateAdded = new DateTime(2020, 9, 13, 21, 50, 10, 98, DateTimeKind.Utc).AddTicks(2811),
                             Text = "Содержание заполняется мною",
                             Title = "Главная"
                         },
                         new
                         {
+                            Id = new Guid("70bf165a-700a-4156-91c0-e83fce0a277f"),
+                            CodeWord = "PageServices",
+                            DateAdded = new DateTime(2020, 9, 13, 21, 50, 10, 98, DateTimeKind.Utc).AddTicks(4154),
+                            Text = "Содержание заполняется мною",
+                            Title = "Мои услуги"
+                        },
+                        new
+                        {
                             Id = new Guid("4aa76a4c-c59d-409a-84c1-06e6487a137a"),
                             CodeWord = "PageContacts",
-                            DateAdded = new DateTime(2020, 9, 1, 20, 30, 14, 671, DateTimeKind.Utc).AddTicks(1142),
+                            DateAdded = new DateTime(2020, 9, 13, 21, 50, 10, 98, DateTimeKind.Utc).AddTicks(4200),
                             Text = "Содержание заполняется мною",
                             Title = "Контакты"
                         });
